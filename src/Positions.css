@@ -1,0 +1,28 @@
+.positions {
+  margin: 0 -20px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.position-block {
+  background-color: white;
+  margin: 0 20px 20px 0;
+  flex: 1 0 34%;
+}
+
+.position-block:nth-last-child(2),
+.position-block:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .position-block {
+    flex: 1 1 51%;
+  }
+
+  .position-block:nth-last-child(2) {
+    margin-bottom: 20px;
+  }
+}
