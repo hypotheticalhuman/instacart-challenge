@@ -40,13 +40,22 @@ class App extends Component {
         <main>
           <div className='container body'>
             <div className='block nav-container'>
-              <button className={genClass(0)} onClick={_ => this.changeTab(0)}>
+              <button
+                className={genClass(0)}
+                onClick={_ => this.changeTab(0)}
+                onKeyDown={e => e.keyCode === 13 && this.changeTab(0)}>
                 <div>Work for Instacart</div>
               </button>
-              <button className={genClass(1)} onClick={_ => this.changeTab(1)}>
+              <button
+                className={genClass(1)}
+                onClick={_ => this.changeTab(1)}
+                onKeyDown={e => e.keyCode === 13 && this.changeTab(1)}>
                 <div>Positions</div>
               </button>
-              <button className={genClass(2)} onClick={_ => this.changeTab(2)}>
+              <button
+                className={genClass(2)}
+                onClick={_ => this.changeTab(2)}
+                onKeyDown={e => e.keyCode === 13 && this.changeTab(2)}>
                 <div>Easy Application</div>
               </button>
             </div>
